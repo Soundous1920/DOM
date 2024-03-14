@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Panier d'achat</title>
+<style>
+    
+</style>
+</head>
+<body>
+<div id="cart">
+    <div class="item" id="item1">
+        <span class="name">Article 1</span>
+        <button class="quantity" onclick="decreaseQuantity('quantity1')">-</button>
+        <span class="quantity" id="quantity1">1</span>
+        <button class="quantity" onclick="increaseQuantity('quantity1')">+</button>
+        <button class="remove" onclick="removeItem('item1')">DELETE</button>
+        <span class="heart" id="heart1" onclick="Like('heart1')">&#x2661;</span>
+    </div>
+    <div class="item" id="item2">
+        <span class="name">Article 2</span>
+        <button class="quantity" onclick="decreaseQuantity('quantity2')">-</button>
+        <span class="quantity" id="quantity2">1</span>
+        <button class="quantity" onclick="increaseQuantity('quantity2')">+</button>
+        <button class="remove" onclick="removeItem('item2')">DELETE</button>
+        <span class="heart" id="heart2" onclick="Like('heart2')">&#x2661;</span>
+    </div>
+    <div id="total">
+        TOTAL PRICE : $<span id="totalPrice">20</span>
+    </div>
+</div>
+
+<script src="script.js">
+    
+</script>
+</body>
+</html>

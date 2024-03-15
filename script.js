@@ -5,7 +5,7 @@ var totalPrice = 20;
         const currentQuantity = parseInt(quantity.textContent);
         if (currentQuantity > 0) {
             quantity.textContent = currentQuantity - 1;
-            totalPrice=totalPrice - 1; // Prix par article
+            totalPrice=totalPrice - 10; // Prix par article
             updateTotalPrice();
         }
     }

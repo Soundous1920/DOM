@@ -1,19 +1,19 @@
-let totalPrice = 20;
+var totalPrice = 20;
    //to decrease the quantity
     function decreaseQuantity(quantityId) {
-        const quantityElement = document.getElementById(quantityId);
-        const currentQuantity = parseInt(quantityElement.textContent);
+        const quantity = document.getElementById(quantityId);
+        const currentQuantity = parseInt(quantity.textContent);
         if (currentQuantity > 0) {
-            quantityElement.textContent = currentQuantity - 1;
-            totalPrice -= 10; // Prix par article
+            quantity.textContent = currentQuantity - 1;
+            totalPrice=totalPrice - 1; // Prix par article
             updateTotalPrice();
         }
     }
 //to increase the quantity
     function increaseQuantity(quantityId) {
-        const quantityElement = document.getElementById(quantityId);
-        const currentQuantity = parseInt(quantityElement.textContent);
-        quantityElement.textContent = currentQuantity + 1;
+        const quantity = document.getElementById(quantityId);
+        const currentQuantity = parseInt(quantity.textContent);
+        quantity.textContent = currentQuantity + 1;
         totalPrice += 10; // Prix par article
         updateTotalPrice();
     }

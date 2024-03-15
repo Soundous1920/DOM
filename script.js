@@ -25,7 +25,7 @@ var totalPrice = 20;
     function removeItem(Id) {
         const quantityElement = document.getElementById('quantity' + Id.slice(-1));
         const currentQuantity = parseInt(quantityElement.textContent);
-        totalPrice -= currentQuantity * 10; // Prix par article
+        totalPrice -= currentQuantity*10; // Prix par article
         updateTotalPrice();
         const item = document.getElementById(Id);
         item.remove();
